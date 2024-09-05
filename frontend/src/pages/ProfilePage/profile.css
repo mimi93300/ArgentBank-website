@@ -1,0 +1,15 @@
+.main_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #12002b;
+    width: 1300px;
+    height: 1145px;
+}
+
+.main_user .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

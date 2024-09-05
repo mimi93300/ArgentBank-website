@@ -1,0 +1,41 @@
+header {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+    height: 80px;
+}
+
+header .logo {
+    width: 200px;
+    max-width: 100%;
+}
+
+.logo {
+    margin-right: 245px;
+}
+
+.header .logo:hover {
+    cursor: pointer;
+}
+
+.link i {
+    margin-right: 10px;
+    color: black;
+}
+
+.link {
+    margin-right: 0.5rem;
+    text-decoration: inherit;
+    font-weight: bold;
+    color: black;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
