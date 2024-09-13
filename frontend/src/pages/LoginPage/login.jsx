@@ -43,7 +43,7 @@ function Login() {
                 const token = responseData.body.token // récupération du token (auth)
                 localStorage.setItem("authToken", token) // enregistrement du token
                 dispatch(login({ token })) // envoie action au store (utilisateur connecté!)
-                navigation("/User") // redirection vers page utilisateur
+                navigation("/profile") // redirection vers page utilisateur
             } else {
                 setErrorMessage(setRequest.statusText) // Pour la mise à jour du message d'erreur
             }
