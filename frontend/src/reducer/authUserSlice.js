@@ -23,8 +23,8 @@ const getUserInfo = () => {
 const userSlice = createSlice({
     name: "user",
     initialState: {
-        token: storedToken || null,
-        isAuthenticated: !!storedToken, // Authentifié si le token est présent
+        token:  null,
+        isAuthenticated: null, // Authentifié si le token est présent
         error: null,
         ...getUserInfo(), // Utiliser les infos utilisateurs stockées si disponibles
     },
@@ -34,7 +34,7 @@ const userSlice = createSlice({
         login(state, action) {
             state.isAuthenticated = true;
             state.token = action.payload.token;
-            localStorage.setItem("authToken", action.payload.token); // Stocker le token dans le localStorage
+            //localStorage.setItem("authToken", action.payload.token); // Stocker le token dans le localStorage
         },
 
         // Action pour la déconnexion de l'utilisateur
