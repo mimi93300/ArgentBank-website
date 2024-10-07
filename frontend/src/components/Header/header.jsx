@@ -30,7 +30,7 @@ function Header() {
             <nav>
                 {isAuthenticated ? (
                     <>
-                        <Link to="/user" className="link">
+                        <Link to="/profile" className="link">
                             <i className="fa fa-user-circle icon-header"></i>
                             {userProfile.userName ? userProfile.userName : userProfile.firstName}
                         </Link>

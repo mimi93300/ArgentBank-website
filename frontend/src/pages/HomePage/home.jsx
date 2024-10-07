@@ -4,8 +4,8 @@ import img_chat from "../../../src/img/icon-chat.webp";
 import img_money from "../../../src/img/icon-money.webp";
 import img_security from "../../../src/img/icon-security.webp";
 
-import Features from '../../components/Feature/feature.jsx';
-import Banner from '../../components/Banner/banner.jsx';
+import Features from '../../components/Feature/Feature.jsx';
+import Banner from '../../components/Banner/Banner.jsx';
 import featuresData from '../../featureData.json'; // Import du fichier JSON
 
 const images = {

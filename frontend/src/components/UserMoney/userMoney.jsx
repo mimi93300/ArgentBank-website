@@ -1,6 +1,6 @@
 import React from 'react'
 import '../UserMoney/userMoney.css'
-import Button from '../Button/button';
+import Button from '../Button/Button';
 
 function userMoney({ title, subtitle, content }) {
     return (

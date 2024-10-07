@@ -1,5 +1,5 @@
 import React from 'react'
-import './features.css';
+import './feature.css';
 
 
 function features({ image, alt, title, content }) {//fonctionnalitées du bas du site (3 images) 

@@ -2,10 +2,11 @@ import React, { useEffect, useCallback } from "react";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 
-import EditUserName from "../../components/EditUserName/editUserName.jsx";
-import UserMoney from "../../components/UserMoney/userMoney.jsx";
+import EditUserName from "../../components/EditUserName/EditUserName.jsx";
+import UserMoney from "../../components/UserMoney/UserMoney.jsx";
 import '../ProfilePage/profile.css';
 import { userProfile } from '../../reducer/authUserSlice.js';
+import accountData from "../../accountData.json"; // Importation des données
 
 function User() {
     const dispatch = useDispatch();
@@ -47,12 +48,18 @@ function User() {
         <main className="main_user">
             <EditUserName />
             <section className="card">
-                <UserMoney title="Argent Bank Checking (x8349)" content="$2,082.79" subtitle="Available Balance" />
-                <UserMoney title="Argent Bank Savings (x6712)" content="$10,928.42" subtitle="Available Balance" />
-                <UserMoney title="Argent Bank Credit Card (x8349)" content="$184.30" subtitle="Current Balance" />
+                {accountData.accounts.map((account, index) => (
+                    <UserMoney 
+                        key={index}
+                        title={account.title} 
+                        content={account.content} 
+                        subtitle={account.subtitle} 
+                    />
+                ))}
             </section>
         </main>
     );
 }
 
 export default User;
+

@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import './login.css'
 import axios from "axios"; // bibliothèque JS pour effectuer des requêtes HTTP.
-import Button from '../../components/Button/button.jsx';
-import Formular from '../../components/Formular/formular.jsx';
+import Button from '../../components/Button/Button.jsx';
+import Formular from '../../components/Formular/Formular.jsx';
 
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'; // Pour la mise à jour des value

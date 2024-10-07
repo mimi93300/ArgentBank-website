@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import HomePage from './pages/HomePage/home';
 import LoginPage from './pages/LoginPage/login';
 import ProfilePage from './pages/ProfilePage/profile';
-import Header from './components/Header/header';
-import Footer from './components/Footer/footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 import { useSelector } from "react-redux";
 
