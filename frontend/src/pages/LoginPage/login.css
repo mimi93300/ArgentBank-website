@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+    align-items: center;
 }
 
 
@@ -46,7 +47,6 @@
 
 label {
     display: flex;
-    width: 240px;
     font-weight: 600;
     margin-top: 10px;
 }
@@ -83,3 +83,5 @@ input {
     visibility: visible;    
     opacity: 1;             
 }
+
+

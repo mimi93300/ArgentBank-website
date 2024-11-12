@@ -1,24 +1,23 @@
 import React, { useEffect } from "react";
 import './header.css';
-import Logo from '../../../src/img/argentBankLogo.webp'; // Chemin mis à jour
+import Logo from '../../../src/img/argentBankLogo.webp';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from '../../reducer/authUserSlice'; // Action correcte importée
+import { logout } from '../../reducer/authUserSlice';
 
 function Header() {
-    const isAuthenticated = useSelector((state) => state.user.isAuthenticated); // Utilisez `state.user` ici
+    const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
     const dispatch = useDispatch();
     const userProfile = useSelector((state) => state.user);
 
     const handleSignOut = () => {
-        dispatch(logout()); // Utilisez `logout` ici
+        dispatch(logout());
     };
 
     useEffect(() => {
         const token = localStorage.getItem("authToken");
         if (token) {
-            // Vous pourriez avoir une action pour vérifier ou récupérer l'utilisateur ici
-            // Par exemple, dispatch(fetchUserData());
+            // Ici, vous pourriez avoir une action pour vérifier ou récupérer les données utilisateur
         }
     }, [dispatch]);
 
@@ -36,13 +35,13 @@ function Header() {
                         </Link>
                         <Link to="/login" onClick={handleSignOut} className="link">
                             <i className="fa fa-sign-out icon-header"></i>
-                            Se Déconnecter
+                            Sign Out
                         </Link>
                     </>
                 ) : (
                     <Link to="/login" className="link">
                         <i className="fa fa-user-circle icon-header"></i>
-                        Se Connecter
+                        Sign In
                     </Link>
                 )}
             </nav>
@@ -51,3 +50,4 @@ function Header() {
 }
 
 export default Header;
+
