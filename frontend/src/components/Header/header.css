@@ -15,10 +15,6 @@ header .logo {
     max-width: 100%;
 }
 
-.logo {
-    margin-right: 245px;
-}
-
 .header .logo:hover {
     cursor: pointer;
 }
@@ -38,4 +34,12 @@ header .logo {
 .link:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media (max-width: 425px){
+    .header_nav {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

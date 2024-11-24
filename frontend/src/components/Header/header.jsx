@@ -26,7 +26,7 @@ function Header() {
             <Link to="/">
                 <img className="logo" src={Logo} alt="logo Argent Bank" />
             </Link>
-            <nav>
+            <nav className="header_nav">
                 {isAuthenticated ? (
                     <>
                         <Link to="/profile" className="link">
